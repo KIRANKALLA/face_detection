@@ -1,7 +1,4 @@
-numpy
-retina-face
-Pillow
-opencv-python
-libgl1-mesa-glx
-scikit-learn
-cmake
+streamlit==1.15.0
+opencv-python==4.5.3
+retinaface==0.0.6
+numpy==1.21.3
