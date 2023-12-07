@@ -1,5 +1,5 @@
 numpy
 retina-face
-dlib
+Pillow
 opencv-python
 scikit-learn
