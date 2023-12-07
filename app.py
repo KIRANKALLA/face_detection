@@ -15,6 +15,8 @@ if image:
     img = np.array(img)
     obj = RetinaFace.detect_faces(img)
     c = len(obj) 
+    st.write(' The number of faces detected are ' + int(c)) 
+
     facial_area=dict()
     for key in obj.keys():
         identity = obj[key]
