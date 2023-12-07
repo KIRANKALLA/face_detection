@@ -1,28 +1,16 @@
-import streamlit as st
-import cv2
 from retinaface import RetinaFace
+import cv2
 import numpy as np
-def main():
-    st.title("Face Detection with RetinaFace")
+from Pillow import Image
+import streamlit as st
 
-    # Upload image through Streamlit
-    image = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
-
-    if image is not None:
-        # Convert Streamlit image to OpenCV format
-        image = cv2.imdecode(np.fromstring(image.read(), np.uint8), 1)
-
-        # Perform face detection using RetinaFace
-        faces = RetinaFace.detect_faces(image)
-
-        # Display the original image with bounding boxes around faces
-        st.image(draw_boxes(image, faces), caption="Detected Faces", use_column_width=True)
-
-def draw_boxes(image, faces):
-    for face in faces:
-        x, y, x2, y2 = face['x'], face['y'], face['x']+face['w'], face['y']+face['h']
-        cv2.rectangle(image, (x, y), (x2, y2), (0, 255, 0), 2)
-    return image
-
-if __name__ == "__main__":
-    main()
+image = st.file_uploader('Take any image')
+if image:
+    img = Image.open(image)
+    st.image(img)
+    obj = RetinaFace.detect_faces(img)
+    for key in obj.keys():
+    identity = obj[key]
+    facial_area = identity['facial_area']
+    cv2.rectangle(img,(facial_area[2],facial_area[3]),(facial_area[0],facial_area[1]),(0,0,0),5)
+    st.image(img)
