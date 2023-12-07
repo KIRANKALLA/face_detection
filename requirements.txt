@@ -1,6 +1,6 @@
 numpy
 retina-face
 Pillow
-opencv-python
+opencv-python-headless
 scikit-learn
 cmake
