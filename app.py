@@ -8,6 +8,7 @@ st.header('AI&DS::RCEE')
 st.title('Faces Detector')
 
 image = st.file_uploader('Take any image')
+facial_area=dict()
 if image:
     img = Image.open(image)
     st.image(img)
