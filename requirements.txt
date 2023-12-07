@@ -1,3 +1,5 @@
-opencv-python==4.5.3
-retinaface==0.0.6
-numpy==1.21.3
+streamlit
+opencv-python
+retina-face
+numpy
+Pillow
