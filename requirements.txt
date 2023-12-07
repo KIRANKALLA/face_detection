@@ -3,5 +3,4 @@ retina-face
 Pillow
 opencv-python
 scikit-learn
-dlib
 cmake
