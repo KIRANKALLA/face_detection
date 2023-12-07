@@ -17,7 +17,7 @@ if image:
     c = len(obj) 
     st.write(' The number of faces detected are ' + str(c)) 
 
-    
+    facial_area = {}
     for key in obj.keys():
         identity = obj[key]
         facial_area = identity['facial_area']
