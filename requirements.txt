@@ -2,5 +2,6 @@ numpy
 retina-face
 Pillow
 opencv-python
+libgl1-mesa-glx
 scikit-learn
 cmake
