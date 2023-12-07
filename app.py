@@ -14,9 +14,9 @@ if img:
     image = np.array(image)
     obj = RetinaFace.detect_faces(image)
     for key in obj.keys():
-    identity = obj[key]
-    facial_area = identity['facial_area']
-    cv2.rectangle(image,(facial_area[2],facial_area[3]),(facial_area[0],facial_area[1]),(0,0,0),5)
-    st.image(image)
+        identity = obj[key]
+        facial_area = identity['facial_area']
+        cv2.rectangle(image,(facial_area[2],facial_area[3]),(facial_area[0],facial_area[1]),(0,0,0),5)
+        st.image(image)
     
     
