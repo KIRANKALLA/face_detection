@@ -1,4 +1,4 @@
-nummpy
+numpy
 retina-face
 dlib
 opencv-python
