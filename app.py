@@ -4,6 +4,9 @@ import numpy as np
 from Pillow import Image
 import streamlit as st
 
+st.header('AI&DS::RCEE')
+st.title('Faces Detector')
+
 image = st.file_uploader('Take any image')
 if image:
     img = Image.open(image)
