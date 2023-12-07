@@ -16,5 +16,6 @@ if image:
     for key in obj.keys():
         identity = obj[key]
         facial_area = identity['facial_area']
-        cv2.rectangle(img,(facial_area[2],facial_area[3]),(facial_area[0],facial_area[1]),(0,0,0),5)
-        st.image(img)
+    cv2.rectangle(img,(facial_area[2],facial_area[3]),(facial_area[0],facial_area[1]),(0,0,0),5)
+    st.image(img)
+    
