@@ -1,7 +1,7 @@
 import streamlit as st
 import cv2
 from retinaface import RetinaFace
-
+import numpy as np
 def main():
     st.title("Face Detection with RetinaFace")
 
