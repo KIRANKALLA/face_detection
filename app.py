@@ -1,7 +1,7 @@
 from retinaface import RetinaFace
 import cv2
 import numpy as np
-from Pillow import Image
+from PIL import Image
 import streamlit as st
 
 st.header('AI&DS::RCEE')
