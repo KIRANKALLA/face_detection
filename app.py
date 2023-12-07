@@ -11,6 +11,7 @@ image = st.file_uploader('Take any image')
 if image:
     img = Image.open(image)
     st.image(img)
+    img = np.array(img)
     obj = RetinaFace.detect_faces(img)
     for key in obj.keys():
         identity = obj[key]
