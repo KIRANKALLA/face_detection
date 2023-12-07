@@ -14,6 +14,7 @@ if image:
     st.image(img)
     img = np.array(img)
     obj = RetinaFace.detect_faces(img)
+    facial_area=dict()
     for key in obj.keys():
         identity = obj[key]
         facial_area = identity['facial_area']
