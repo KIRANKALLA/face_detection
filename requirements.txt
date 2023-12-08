@@ -1,3 +1,5 @@
+deepface
+retina-face
 streamlit
 opencv-python
 retina-face
